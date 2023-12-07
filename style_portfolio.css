@@ -23,7 +23,7 @@ body{
 }
 html{
     font-size: 62.5%;
-        overflow-x: hidden;
+    overflow-x: hidden;
 }
 header{
     height: 10rem;
@@ -246,5 +246,10 @@ header{
     }
     .hero_container{
         height: 100%;
+        width: 100%;
+        position: relative;
+        right: 0;
+
     }
+ 
 }
