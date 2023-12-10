@@ -202,7 +202,7 @@ header {
 }
 
 .about_inner_container .about_img {
-    background-image: url("https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/2.png");
+    background-image: url("pf3.png");
     background-size: cover;
     width: 45rem;
     height: 45rem;
@@ -258,7 +258,7 @@ header {
 }
 
 /* projects section starts */
-#projects {
+#projects,#contact{
     width: 100%;
     height: auto;
     background-color: #0a0908;
@@ -267,9 +267,9 @@ header {
 }
 
 #about,
-#projects {
+#projects,#contact {
     /* margin-bottom: 12rem; */
-    padding-top: 13rem;
+    padding-top: 11rem;
 }
 
 .projects_container {
@@ -277,7 +277,7 @@ header {
 }
 
 .projects_inner_container {
-    border: 2px solid var(--heading-tetxt-color);
+    /* border: 2px solid var(--heading-tetxt-color); */
     /* width: 60%; */
     margin: 2rem 20%;
     padding: 2rem;
@@ -307,27 +307,119 @@ header {
     padding: 1rem 2rem;
     margin: 0.5rem;
     font-size: 1.2rem;
-    border: 1px solid #333;
-    border-radius: 5px;
-    background-color:transparent;
+    border: 2px solid #333;
+    border-radius: 100rem;
 }
 
 .pj_btn a {
-    color: var(--heading-tetxt-color);
+    color: var(--text-color);
+    font-weight: 600;
+    background-color: var(--heading-tetxt-color);
 
     /* font-weight:600; */
 }
 
 .pj_btn a:hover {
-    background-color: var(--visited-color);
+    background-color: transparent;
     color: var(--bg-color);
+    border: 2px solid var(--visited-color);
     transition: all 0.5s linear;
 }
 
 .pj_btn button a:hover {
     color: var(--bg-color);
 }
+.pj1 .pimg{
+    background-image: url("notehelper.png");
+    background-size: cover;
+    height: 20rem;
+    width: 40rem;
+    margin: 2rem auto;
+    border: 2px solid var(--heading-tetxt-color);
+    border-radius:2rem;
+}
+.pj2 .pimg{
+    background-image: url("amazon.png");
+    background-size: cover;
+    height: 20rem;
+    width: 40rem;
+    margin: 2rem auto;
+    border: 2px solid var(--heading-tetxt-color);
+    border-radius:2rem;
+}
+.pj3 .pimg{
+    background-image: url("portfolioimg.png");
+    background-size: cover;
+    height: 20rem;
+    width: 40rem;
+    margin: 2rem auto;
+    border: 2px solid var(--heading-tetxt-color);
+    border-radius:2rem;
+}
+.pimg:hover{
+    /* transform: scale(1.2); */
+    transition: all 1s linear;
+}
 
+
+/* contact section starts */
+
+.contact_container{
+    text-align: center;
+    /* padding-top: 3rem; */
+}
+
+.contact_innercontainer{
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+
+}
+.contact_innercontainer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid var(--visited-color);
+    border-radius: 2rem;
+    background-color: var(--heading-tetxt-color);
+    width: 40%;
+    margin-bottom: 5rem;
+    padding: 10rem;
+    text-align: center;
+
+}
+.contact_innercontainer div i{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.contact_innercontainer div .contact_media{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.contact_innercontainer div .cid{
+    font-size: 1.7rem;
+    color: #0a0908;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.contact_innercontainer div a{
+    font-size: 1.5rem;
+    /* color: var(--menu-color); */
+}
+.contact_innercontainer div:hover{
+    background-color: transparent;
+    border: 2px solid var(--heading-tetxt-color);
+    color: var(--header-color);
+    transition: all 0.6s linear;
+}
+.contact_innercontainer div:hover p{
+    color: var(--header-color);
+    transition: all 0.5s linear;
+}
 
 
 
@@ -478,21 +570,39 @@ header {
         width: 100%;
     }
 
+    /* projects section starts */
+
     .projects_container,
     #projects {
         height: auto;
     }
 
     .projects_inner_container {
-        border: 2px solid var(--heading-tetxt-color);
+        /* border: 2px solid var(--heading-tetxt-color); */
         /* width: 60%; */
-        margin: 2rem 2%;
+        margin: 2rem auto;
         padding: 2rem;
     }
 
     .pj_btn {
         flex-direction: column;
     }
-
+    #projects {
+        /* margin-bottom: 12rem; */
+        padding-top: 10rem;
+    }
  
+
+    /* contact section starts */
+    .contact_innercontainer{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .contact_innercontainer div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
