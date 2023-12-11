@@ -581,7 +581,11 @@ header {
         /* border: 2px solid var(--heading-tetxt-color); */
         /* width: 60%; */
         margin: 2rem auto;
-        padding: 2rem;
+        padding: 5rem;
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        align-items: center;
     }
 
     .pj_btn {
@@ -605,4 +609,8 @@ header {
         align-items: center;
         flex-direction: column;
     }
+    /* .pimg{
+        width: 50%;
+        margin:2rem auto ; 
+    } */
 }
